@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema De Facturación</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/Home/Index">Sistema De Facturación</a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+                <li class="nav-item">
+                    <a href="/Almacen/Index" class="nav-link">Almacen</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Cliente/Index" class="nav-link">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Entrada/Index" class="nav-link">Entradas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Facturacion/Index" class="nav-link">Facturación</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Producto/Index" class="nav-link">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Proveedor/Index" class="nav-link">Proveedores</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <div class="container-fluid body-content">
+            @RenderBody()
+        </div>
+    </main>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

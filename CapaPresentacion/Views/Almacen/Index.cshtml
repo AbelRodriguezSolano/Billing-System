@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CapaEntidad.VistaStock_Result>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="text-center text-uppercase my-3">Almacen de Productos</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+        </tr>
+    }
+
+</table>

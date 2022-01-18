@@ -1,0 +1,141 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background-color: #ccc;
+}
+
+.nav-link:hover {
+    transition: all 0.4s;
+}
+
+.nav-link-collapse:after {
+    float: right;
+    content: '\f067';
+    font-family: 'FontAwesome';
+}
+
+.nav-link-show:after {
+    float: right;
+    content: '\f068';
+    font-family: 'FontAwesome';
+}
+
+.nav-item ul.nav-second-level {
+    padding-left: 0;
+}
+
+    .nav-item ul.nav-second-level > .nav-item {
+        padding-left: 20px;
+    }
+
+@media (min-width: 992px) {
+    .sidenav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: calc(100vh - 3.5rem);
+        margin-top: 3.5rem;
+        background: #343a40;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-expand-lg .sidenav {
+        flex-direction: column;
+    }
+
+    .content-wrapper {
+        margin-left: 230px;
+    }
+
+    .footer {
+        width: calc(100% - 230px);
+        margin-left: 230px;
+    }
+}
+.card {
+    border: 0;
+    margin: 5px auto;
+    display: flex;
+}
+
+    .card .card-body {
+        z-index: 2;
+        margin-top: -1rem;
+        background-color: #fff;
+        width: 80%;
+        position: relative;
+    }
+
+    .card .card-image {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+        .card .card-image > a > h3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 5px 0 0;
+            z-index: 2;
+            background: rgba(60, 48, 48, 0.6);
+            color: #d6e3df;
+            font-size: 1.5em;
+            padding: 3px;
+            transition: all 0.5s ease;
+            transform: translateX(-100%);
+        }
+
+        .card .card-image img {
+            position: relative;
+            opacity: 1;
+            width: 100%;
+            opacity: 0.85;
+            transition: 0.5s ease;
+        }
+
+    .card:hover img {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    .card:hover .card-image > a > h3 {
+        transform: translateX(0%);
+    }
+
+    .card .card-body, .card .card-image {
+        border-radius: 5px;
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .card .card-badge-left {
+        position: absolute;
+        z-index: 3;
+        margin-top: 5px;
+    }
+
+        .card .card-badge-left .badge {
+            border-radius: 0;
+            color: #f37272;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px;
+        }
+
+    .card .bottom {
+        float: right;
+    }

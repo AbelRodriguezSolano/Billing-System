@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fb169b39ad8044c680bf8c3dbff28575" Name="Diagram1">
+        <EntityTypeShape EntityType="SistemaDeFacturacionModel.Categoria" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaDeFacturacionModel.Cliente" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaDeFacturacionModel.Producto" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaDeFacturacionModel.Proveedore" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="SistemaDeFacturacionModel.fk_Cliente_Categoria" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SistemaDeFacturacionModel.Entrada" Width="1.5" PointX="5" PointY="6.625" />
+        <EntityTypeShape EntityType="SistemaDeFacturacionModel.Facturacion" Width="1.5" PointX="5.25" PointY="2.5" />
+        <AssociationConnector Association="SistemaDeFacturacionModel.fk_Facturacion_Cliente" />
+        <AssociationConnector Association="SistemaDeFacturacionModel.fk_Entradas_Producto" />
+        <AssociationConnector Association="SistemaDeFacturacionModel.fk_Entradas_Proveedor" />
+        <AssociationConnector Association="SistemaDeFacturacionModel.fk_Facturacion_Producto" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
