@@ -1,4 +1,4 @@
-# Facturation System
+# Billing System
 This System was build in ASP.NET MVC AND SQL Server. This project was made to solve the administration of products both inputs and outputs of the same in a small company.
 
 If you want to run this project in your machine, you have to import database file in SQL Server and open the project solution in Visual Studio.
